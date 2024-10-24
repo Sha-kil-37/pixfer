@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* custom css bellow */
+.side-modal {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: auto;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.side-modal.open {
+  right: 0;
+}
